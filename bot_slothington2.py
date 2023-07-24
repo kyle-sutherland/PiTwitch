@@ -95,43 +95,43 @@ class Bot(commands.Bot):
         # flash led purple
         led.alertPurple(3, 0.1)
 
-        if "loot" in message.content.casefold() and "?" not in message.content:
-            response = "GIVE ME THE LOOT!!"
-            await message.channel.send(response)
+        # if "loot" in message.content.casefold() and "?" not in message.content:
+        #     response = "GIVE ME THE LOOT!!"
+        #     await message.channel.send(response)
 
-        spicy_biz = ["spicy", "spicy business", "piquante"]
+        # spicy_biz = ["spicy", "spicy business", "piquante"]
 
-        for i in spicy_biz:
-            if i in message.content.casefold() and "?" not in message.content:
-                Bot.spicyBizCount += 1
-                response = "smells like some spicy business"
-                await message.channel.send(response)
+        # for i in spicy_biz:
+        #     if i in message.content.casefold() and "?" not in message.content:
+        #         Bot.spicyBizCount += 1
+        #         response = "smells like some spicy business"
+        #         await message.channel.send(response)
 
-        spooky_biz = ["spooky", "spooooky", "spoopy", "spook", "scary", "frightening"]
+        # spooky_biz = ["spooky", "spooooky", "spoopy", "spook", "scary", "frightening"]
 
-        for i in spooky_biz:
-            if i in message.content.casefold() and "?" not in message.content:
-                Bot.spookyBizCount += 1
-                response = "spoooooky!"
-                await message.channel.send(response)
+        # for i in spooky_biz:
+        #     if i in message.content.casefold() and "?" not in message.content:
+        #         Bot.spookyBizCount += 1
+        #         response = "spoooooky!"
+        #         await message.channel.send(response)
 
-        greeting = [
-            "hello",
-            "hi ",
-            "hey",
-            "what's up",
-            "whats up",
-            "sup",
-            "yo ",
-            "yoyo",
-        ]
+        # greeting = [
+        #     "hello",
+        #     "hi ",
+        #     "hey",
+        #     "what's up",
+        #     "whats up",
+        #     "sup",
+        #     "yo ",
+        #     "yoyo",
+        # ]
 
-        for i in greeting:
-            if i in message.content.casefold() and "?" not in message.content:
-                response = (
-                    f"Hello {message.author.name}! Follow if you like this content"
-                )
-                await message.channel.send(response)
+        # for i in greeting:
+        #     if i in message.content.casefold() and "?" not in message.content:
+        #         response = (
+        #             f"Hello {message.author.name}! Follow if you like this content"
+        #         )
+        #         await message.channel.send(response)
 
         # Since we have commands and are overriding the default `event_message`
         # We must let the bot know we want to handle and invoke our commands...
